@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mcpp-example": {
+      "command": "bash",
+      "args": [
+        "/home/cat/Documents/trae_projects/trae/mcpp/mcpp_launcher.sh"
+      ],
+      "env": {
+        "MCPP_BINARY": "/home/cat/Documents/trae_projects/trae/mcpp/build/mcpp_example",
+        "MCPP_PROJECT_DIR": "/home/cat/Documents/trae_projects/trae/mcpp"
+      },
+      "disabled": false
+    }
+  }
+}

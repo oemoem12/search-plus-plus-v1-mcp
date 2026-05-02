@@ -1,0 +1,94 @@
+{
+  "name": "search-plus-plus-v1-mcp",
+  "version": "1.0.0",
+  "description": "High-performance C++ MCP server with multi-engine web search (Baidu, Bing, Bilibili)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/search-plus-plus-v1-mcp.git"
+  },
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "search",
+    "baidu",
+    "bing",
+    "bilibili",
+    "cpp",
+    "c++",
+    "model-context-protocol"
+  ],
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  },
+  "tools": [
+    {
+      "name": "search_baidu",
+      "description": "Search on Baidu and return results with title, URL, and snippet"
+    },
+    {
+      "name": "search_bing",
+      "description": "Search on Bing and return results with title, URL, and snippet"
+    },
+    {
+      "name": "search_bilibili",
+      "description": "Search on Bilibili for videos and return results with title, URL, view count, and uploader"
+    },
+    {
+      "name": "search_multi",
+      "description": "Search across multiple engines (baidu, bing, bilibili) in parallel"
+    },
+    {
+      "name": "calculator",
+      "description": "Perform basic arithmetic operations (add, subtract, multiply, divide)"
+    },
+    {
+      "name": "string_util",
+      "description": "Manipulate strings (upper, lower, reverse, length)"
+    },
+    {
+      "name": "get_time",
+      "description": "Get the current date and time with milliseconds"
+    }
+  ],
+  "resources": [
+    {
+      "uri": "mcpp://docs/getting-started",
+      "name": "Getting Started Guide",
+      "mimeType": "text/markdown"
+    },
+    {
+      "uri": "mcpp://docs/api-reference",
+      "name": "API Reference",
+      "mimeType": "text/markdown"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "code_review",
+      "description": "Generate a code review request"
+    },
+    {
+      "name": "explain",
+      "description": "Ask for an explanation of a topic at a given level"
+    }
+  ],
+  "install": {
+    "type": "manual",
+    "instructions": "Build from source using CMake. Requires C++17 compiler, libcurl, and nlohmann_json."
+  },
+  "runtime": {
+    "type": "binary",
+    "platforms": ["linux", "macos", "windows"],
+    "requirements": {
+      "compiler": "C++17 compatible (GCC 9+, Clang 10+, MSVC 2019+)",
+      "dependencies": ["libcurl", "nlohmann_json"]
+    }
+  }
+}
