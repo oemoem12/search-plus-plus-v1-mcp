@@ -101,7 +101,7 @@ brew install cmake curl nlohmann-json
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/search-plus-plus-v1-mcp.git
+git clone https://github.com/oemoem12/search-plus-plus-v1-mcp.git
 cd search-plus-plus-v1-mcp
 
 # Build
